@@ -22,12 +22,10 @@ def generate_data(n=200):
 
 X, y = generate_data()
 
-# --- NEW: Save the generated data to a file ---
-# This allows the examiner to "download" and verify your data
 np.savez('aimlFin2026_1_baklaga/task_1/malware_data.npz', X=X, y=y)
 print("Dataset saved to malware_data.npz")
 
-# 2. Define CNN Architecture
+# 2.  CNN Architecture
 model = models.Sequential([
     layers.Conv2D(32, (3,3), activation='relu', input_shape=(28,28,1)),
     layers.MaxPooling2D((2,2)),
