@@ -11,7 +11,6 @@ LOG_FILE = "aimlFin2026_1_baklaga/task_3/l_baklaga_89734_server.log"
 def analyze():
     print("1. Parsing Log File...")
     timestamps = []
-    # REGEX: Precise match for format [2024-03-22 18:01:31+04:00]
     # We capture only the date and time part: 2024-03-22 18:01:31
     time_pattern = re.compile(r'\[(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})')
 
